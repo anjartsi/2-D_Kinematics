@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type='text/javascript' src='jquery-1.11.1.js'></script>
+	<script type="text/javascript" src="physics2.0.js"></script>
+	<link rel="stylesheet" type="text/css" href="C:\Users\Armen\Dropbox\Git\physics2.0\physics2.0.css">	
+	<title>Physics by Armen O.</title>
+</head>
+<body>
+	<form>
+		<table>
+			<thead>
+				<tr>
+					<th></th>
+					<th colspan='2'>Initial</th>
+					<th></th>
+					<th colspan='2'>Final</th>
+				</tr>
+				<tr>
+					<th></th>
+					<th>Horizontal</th>
+					<th>Veritcal</th>
+					<th></th>
+					<th>Horizontal</th>
+					<th>Vertical</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Position</td>
+					<td>0 m</td>
+					<td> 0 m</td>
+					<td></td>
+					<td id='xf'></td>
+					<td id='yf'></td>
+				</tr>
+					<td>Velocity</td>
+					<td>4 m/s</td>
+					<td> 10 m/s</td>
+					<td></td>
+					<td id='vxf'></td>
+					<td id='vyf'></td>
+				</tr>
+					<td>Acceleration</td>
+					<td>0 m/s<sup>2</sup></td>
+					<td> -9.8 m/s<sup>2</sup></td>
+				</tr>
+			</tbody>
+		</table>
+		<input type='button' onClick='start()' value='Start'>		
+		<input type='button' onClick='resett()' value='Reset'>
+		</form>
+		<div class='balloutline'></div>
+		<div class='ballx'></div>
+		<div class='bally'></div>
+		<div class='ball'></div>
+		<div id ='ground'></div>
+</body>
+</html>
