@@ -28,15 +28,15 @@
 			<tbody>
 				<tr>
 					<td>Position</td>
-					<td>0 m</td>
-					<td> 0 m</td>
+					<td id='x0'>0.0 m</td>
+					<td id='y0'> 0.0 m</td>
 					<td></td>
 					<td id='xf'></td>
 					<td id='yf'></td>
 				</tr>
 					<td>Velocity</td>
-					<td>4 m/s</td>
-					<td> 10 m/s</td>
+					<td id='vx0'>4.0 m/s</td>
+					<td id='vy0'> 10 m/s</td>
 					<td></td>
 					<td id='vxf'></td>
 					<td id='vyf'></td>
@@ -48,7 +48,8 @@
 			</tbody>
 		</table>
 		<input type='button' onClick='start()' value='Start'>		
-		<input type='button' onClick='resett()' value='Reset'>
+		<input type='button' onClick='throwUp()' value='Throw Upwards'>
+		<input type='button' onClick='throwSide()' value='Throw Sideways'>
 		</form>
 		<div class='balloutline'></div>
 		<div class='ballx'></div>

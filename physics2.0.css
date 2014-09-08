@@ -24,7 +24,7 @@
 input{
 	background-color: lightgrey;
 	text-align: center;
-	width: 60px;
+	margin-left: 20px;
 }
 
 #ground{
@@ -50,3 +50,4 @@ tbody td{
 tbody tr:first-child td{
 	border-top: 1px dashed black;
 }
+
