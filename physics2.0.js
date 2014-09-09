@@ -105,12 +105,15 @@ function throwSide() {
 
 // begins moving the ball
 function start() {
-	started = setInterval(function(){
-		move();
-	},10);
+	if(!started) {
+		started = setInterval(function(){
+			move();
+		},10);
+	}
 }
 
 // stops the ball from moving
 function stop() {
 	window.clearInterval(started)
+	started = null;
 }
