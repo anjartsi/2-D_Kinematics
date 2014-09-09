@@ -9,6 +9,20 @@ var t=0;
 var dt=0.1;
 var started;
 
+/*
+ This is our jQuery on ready function. This will only execute when the HTML and CSS has finished loading
+ which prevents the javascript from executing before all the HTML exists and is properly sized/placed.
+
+ Inside this, we will do all of our initializations since this will be run as soon as the page is loaded.
+*/
+$(function() {
+	// Default action is to throw it up
+	throwUp();
+
+	// This will take care of registering all of our event listeners
+	initEventListeners();
+});
+
 // Default action is to throw it up
 throwUp();
 
@@ -33,8 +47,8 @@ function topCoord() {
 // sets the ball's location to the position defined by x and y
 function moveBall() {
 		$('.ball').css({
-		left:leftCoord(),
-		top :topCoord(),
+			left:leftCoord(),
+			top :topCoord(),
 		});
 		$('.ballx').css({left:leftCoord()});
 		$('.bally').css({top : topCoord()});
@@ -116,4 +130,24 @@ function start() {
 function stop() {
 	window.clearInterval(started)
 	started = null;
+}
+
+/*
+	There is quite a bit going on here. First note the different way for declaring functions.
+	This is actually the preferred manner since it leaves the global namespace clobber free (
+	otherwise, a function and a variable could end up with the same name).
+
+	We are using this method to set event listeners. This is the preferred way to react to user's
+	clicking, typing, etc. onClick and all of that is unreliable and limits you because you have
+	to type it on every element that receives the message. Doing it programmatically is better
+	since the event bubbles up (all of its parents receive the message too) which will help
+	us out with more complex events.
+*/
+var initEventListeners = function() {
+	// You can read the jquery documenation on this. This is a jquery shortcut for
+	// window.addEventListener('click', function(){}); Both work perfectly the same
+	$('#start-button').click(start);
+	$('#stop-button').click(stop);
+	$('#throw-up-button').click(throwUp);
+	$('#throw-side-button').click(throwSide);
 }
