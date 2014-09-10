@@ -6,7 +6,7 @@ var vy;
 var ax;
 var ay;
 var t=0;
-var dt=0.1;
+var dt=0.01;
 var started;
 
 /*
