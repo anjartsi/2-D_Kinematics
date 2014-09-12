@@ -63,7 +63,7 @@ function printInitials() {
 	$('#vy0').html(vy.toFixed(2)+' m/s');
 }
 
-//prints all of the final/current values of the vairables in the table
+// prints all of the final/current values of the vairables in the table
 function printFinals() {
 
 	$('#xf').html(x.toFixed(2)+' m');
@@ -103,7 +103,7 @@ function throwUp() {
 	printInitials();
 }
 
-//sets the initial conditions to throw the ball horizontally from above the ground
+// sets the initial conditions to throw the ball horizontally from above the ground
 function throwSide() {
 	x=0;
 	y=200; 
@@ -145,7 +145,7 @@ function stop() {
 */
 var initEventListeners = function() {
 	// You can read the jquery documenation on this. This is a jquery shortcut for
-	// window.addEventListener('click', function(){}); Both work perfectly the same
+	// window.addEventListener('click', functoin(){}); Both work perfectly the same
 	$('#start-button').click(start);
 	$('#stop-button').click(stop);
 	$('#throw-up-button').click(throwUp);

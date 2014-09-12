@@ -38,11 +38,6 @@ html{
 	background-color: #6671C2;
 }
 
-canvas {
-  display:block;
-  margin:auto;
-  border:1px dashed black;
-}
 tbody td{
 	border-bottom: 1px dashed black;
 	text-align: center;
