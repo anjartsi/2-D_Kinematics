@@ -2,7 +2,8 @@
 ==============
 My first project on GitHub, as well as my first major project with HTML/JS
 
-The goal for this project is to create a model to show my AP Physics students how 2-D Kinematics work. 
+The goal for this project is to create a model to show Physics students how 2-D Kinematics work. 
 
-The ultimate goal is to produce something that students can use to create different scenarios. 
-In other words, I want to give the user the ability to change the initial conditions of the problem while keeping the ball within a reasonable space
+The ultimate goal is to produce something that can take user input (initial conditions), and simulate the motion of an object under those initial conditions. 
+
+I would first like to focus on mathematical accuracy, and afterwards I would like to make the interface smooth and easy-to-use. 
