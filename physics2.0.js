@@ -54,7 +54,7 @@ function moveBall() {
 		$('.bally').css({top : topCoord()});
 }
 
-// prints all the initial values of the variables into the table
+// prints all the initial values of the variables into the html table
 function printInitials() {
 
 	$('#x0').html(x.toFixed(2)+' m');
